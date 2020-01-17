@@ -10,7 +10,7 @@ class EmailAddressParser
 
   def parse
     email_array = @email.split(/[, ]/).uniq
-    email_array.reject! {|element| element.empty?}
+    email_array.reject! {|element| element.empty?}  #alternative to .uniq
     email_array
   end
 
